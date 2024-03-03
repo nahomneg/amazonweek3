@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="26dp"
+    android:background="@color/white"
+    tools:context=".SignActivity">
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="40sp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:backgroundTint="#FFF"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:backgroundTint="#FFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#FFF"
+        android:background="#FFFFC107"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"/>
+
+
+
+        <TextView
+            android:id="@+id/newToAmazonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="540px"
+            android:text="New to Amazon?"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:text="Create A new Amazon Account"
+            android:background="#f1f0ee"
+            android:textColor="#000"
+            android:layout_below="@id/newToAmazonText"
+            android:layout_centerHorizontal="true"/>
+
+
+</LinearLayout>
