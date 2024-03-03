@@ -34,7 +34,7 @@ class CreateAccountActivity : AppCompatActivity() {
                 registeredUsers.add(username)
                 showToast("Account created successfully")
                 // Redirect to sign-in activity
-                startActivity(Intent(this, CategoryActivity::class.java))
+                startActivity(Intent(this, SignActivity::class.java))
                 finish()
             }
         }

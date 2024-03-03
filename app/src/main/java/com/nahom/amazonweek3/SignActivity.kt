@@ -18,6 +18,7 @@ class SignActivity : AppCompatActivity() {
         val usernameEditText = findViewById<EditText>(R.id.usernameEditText)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val signInButton = findViewById<Button>(R.id.signInButton)
+        val createAccount = findViewById<Button>(R.id.createAccountButton)
 
         signInButton.setOnClickListener {
             val username = usernameEditText.text.toString()
@@ -29,7 +30,11 @@ class SignActivity : AppCompatActivity() {
                 showToast("Invalid username or password")
             }
         }
+        createAccount.setOnClickListener {
+            startActivity(Intent(this, CreateAccountActivity::class.java))
+        }
     }
+
 
     private fun navigateToShoppingCategory() {
         val intent = Intent(this, CategoryActivity::class.java)
